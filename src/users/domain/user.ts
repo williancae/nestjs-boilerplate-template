@@ -1,7 +1,7 @@
 import { Exclude, Expose } from 'class-transformer';
 import { FileType } from '../../files/domain/file';
 import { Role } from '../../roles/domain/role';
-import { Status } from '../../statuses/domain/status';
+import { Status } from '../../status/domain/status';
 
 export class User {
   id: number | string;

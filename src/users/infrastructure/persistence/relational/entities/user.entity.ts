@@ -1,6 +1,6 @@
 import {
-  Column,
   AfterLoad,
+  Column,
   CreateDateColumn,
   DeleteDateColumn,
   Entity,
@@ -9,13 +9,13 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { RoleEntity } from '../../../../../roles/infrastructure/persistence/relational/entities/role.entity';
-import { StatusEntity } from '../../../../../statuses/infrastructure/persistence/relational/entities/status.entity';
 import { FileEntity } from '../../../../../files/infrastructure/persistence/relational/entities/file.entity';
+import { RoleEntity } from '../../../../../roles/infrastructure/persistence/relational/entities/role.entity';
+import { StatusEntity } from '../../../../../status/infrastructure/persistence/relational/entities/status.entity';
 
-import { User } from '../../../../domain/user';
 import { AuthProvidersEnum } from '../../../../../auth/auth-providers.enum';
 import { EntityRelationalHelper } from '../../../../../utils/relational-entity-helper';
+import { User } from '../../../../domain/user';
 
 // We use class-transformer in ORM entity and domain entity.
 // We duplicate these rules because you can choose not to use adapters
